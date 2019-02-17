@@ -1,10 +1,10 @@
 
 const ENTRY_SCRIPT_PATH = './dist/index.js';
-const PATH_TO_SCRIPT_CLONE = '/home/ubuntu/ts-server/';
+const PATH_TO_SCRIPT_CLONE = '/home/ubuntu/ts-structure-server/';
 
-const KEY = '~/pem_files/demo_app.pem';
+const KEY = '~/pem-keys/demo_app.pem';
 const HOSTS = ['ec2-3-16-186-126.us-east-2.compute.amazonaws.com', 'ec2-18-224-0-237.us-east-2.compute.amazonaws.com'];
-const REPO = 'git@github.com:OfirGMoveo/test-repo.git';
+const REPO = 'git@github.com:OfirGMoveo/ts-structure-server.git';
 
 
 module.exports = {

@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import { BoundTo, Mesh, StrongSchema, createStrongSchema } from './../../../../ts-coverage';
+import { BoundTo, Mesh, StrongSchema, createStrongSchema } from './../../../ts-coverage';
 
 export interface IUser {
     name: string;

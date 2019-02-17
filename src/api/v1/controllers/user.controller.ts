@@ -1,4 +1,4 @@
-import { ControllerFunction } from '../../../../ts-coverage';
+import { ControllerFunction } from '../../../ts-coverage';
 import { UserHandler } from './../handlers/user.handler';
 
 export namespace UserController {

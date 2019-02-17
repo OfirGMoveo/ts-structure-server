@@ -1,5 +1,5 @@
 import { auth } from 'firebase-admin';
-import { HandlerFunction } from '../../../../ts-coverage';
+import { HandlerFunction } from '../../../ts-coverage';
 import { DbSandbox } from './../../../utils/db-sandbox';
 import { IUserModel } from './../../../db/models';
 

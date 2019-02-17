@@ -1,4 +1,4 @@
-import { ValidatorFunction } from '../../../../ts-coverage';
+import { ValidatorFunction } from '../../../ts-coverage';
 import { AuthSandbox } from '../../../utils/auth-sandbox';
 import * as debug from 'debug';
 const error = debug('UserValidator:error');

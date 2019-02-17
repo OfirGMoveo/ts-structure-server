@@ -53,7 +53,7 @@ module.exports = {
         ref  : 'origin/master',
         repo : REPO,
         path : PATH_TO_SCRIPT_CLONE,
-        "post-deploy" : 'npm install && ./build-del-source.sh && pm2 reload ecosystem.config.js  --env production',
+        "post-deploy" : './install-build-del-source.sh && pm2 reload ecosystem.config.js  --env production',
         "pre-deploy-local" : "echo 'Deploying code to servers'",
         env : {
           "NODE_ENV": "production"

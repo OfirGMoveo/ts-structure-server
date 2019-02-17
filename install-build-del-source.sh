@@ -4,5 +4,5 @@ echo 'build done'
 npm run build 
 echo 'build done'
 
-#rm -r src
-#echo 'del source done'
+rm -rf src
+echo 'del source done'

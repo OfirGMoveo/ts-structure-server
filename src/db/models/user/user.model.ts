@@ -1,11 +1,11 @@
 import { Schema, model, Document } from 'mongoose';
 import { BoundTo, Mesh, StrongSchema, createStrongSchema } from './../../../ts-coverage';
-
 export interface IUser {
     name: string;
     uid: string;
     email: string;
     level: number;
+    date: { a: string; b: string;}
     favoriteList: Array<Schema.Types.ObjectId>;
     markedList: Array<Schema.Types.ObjectId>;
     meta: Object;
@@ -22,6 +22,7 @@ class UserMethods {
      * print this doc _id.
      */
     printId: BoundTo<IUserModel> = function() { console.log(this._id); };
+
     // more methods ...
 }
 
@@ -31,6 +32,7 @@ const UserSchema = createStrongSchema(({
     email:          { type: String,   required: true },
     level:          { type: Number,   default: 1 },
     meta:           { type: Schema.Types.Mixed, default: {} },
+    date:           { a: '', b: ''},
     // additional fields
     favoriteList:   { type: [{type: Schema.Types.ObjectId, ref: 'posts'}], default: [] },
     markedList:     { type: [{type: Schema.Types.ObjectId, ref: 'posts'}], default: [] },

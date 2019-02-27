@@ -1,5 +1,5 @@
 npm install
-echo 'build done'
+echo 'install done'
 
 npm run build 
 echo 'build done'
